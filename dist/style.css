@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /*background: #001F54;*/
+    background: #F5EDBF;    
+    color: #313131;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+#main {
+    width: 400px;
+    padding: 5vh 3vh 5vh 3vh;    
+    /*background: #0A1128;*/
+    background: #453419;
+    color: #DADDD8; 
+    border-radius: 25px;
+    box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.8);
+    margin: 0;
+}
+
+#passwordContainer {
+    min-width: 350px;
+    min-height: 50px;
+    /*background: #001F54;*/
+    background: #F5EDBF;
+    margin: 0 20px 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#pswd {
+    border: none;
+    /*background: #001F54;*/
+    background: #F5EDBF;
+    
+    color: #313131;    
+    outline: none;
+    font-size: 21px;
+    max-width: 250px;
+    margin-left: 10px;
+}
+
+#copyBtn {
+    border: none;
+    color: #DADDD8;
+    /*background: #0A1128;*/
+    background: #453419;
+    margin-right: 15px;
+    padding: 10px 10px 10px 10px;
+}
+
+.option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px 10px 25px;
+    /*padding-left: 25px;*/
+}
+
+.finish {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 25px 0 25px;
+}
+
+#finishBtn {
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    color: #313131;
+    /*background: #001F54;*/
+    background: #F5EDBF;  
+    margin: 0;
+}
+
+#finishBtn:hover {
+    /*background: #034078;*/
+    background: #8C6931;
+    color: #DADDD8;
+}
+
+#copyBtn:hover {
+    /*background: #034078;*/
+    background: #8C6931;
+}
+
+input[type="checkbox"] {
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background: #c6c6c6;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+    transition: 0.2s;
+}
+
+input[type="checkbox"]:checked {
+    background: #8C6931;
+}
+
+input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    transform: scale(1.1);
+    transition: 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+input:checked[type="checkbox"]::before {
+    transform: translateX(20px);
+
+}

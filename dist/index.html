@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Generatort</title>
+  </head>
+  <body>
+    <h1>Hello, let's make a password!</h1>
+    <div id="main">
+      <div id="passwordContainer">
+            <input type="text" id="pswd" />        
+            <button id="copyBtn">COPY</button>
+      </div>
+      <div class="option">
+        <label for="low">Lower case letters</label>
+        <input id="low" type="checkbox" />
+      </div>
+      <div class="option">
+        <label for="upp">Upper case letters</label>
+        <input id="upp" type="checkbox" />
+      </div>
+      <div class="option">
+        <label for="num">Numbers</label>
+        <input id="num" type="checkbox" />
+      </div>
+      <div class="option">
+        <label for="sym">Symbols</label>
+        <input id="sym" type="checkbox" />
+      </div>
+      <div class="option">
+        <label for="len">Length of password</label>
+        <input id="len" size="4" type="text" value="10"/>
+      </div>
+      <div class="finish">
+        <button id="finishBtn">Create the password</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
